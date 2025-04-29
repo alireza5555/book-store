@@ -7,7 +7,7 @@ public abstract class Product {
         this.price = price;
     }
 
-    private static int num = 1;
+    protected static int num = 1;
 
     private String title;
     private Double price;
