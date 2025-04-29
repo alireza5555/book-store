@@ -24,7 +24,7 @@ public class Inventory<T extends Product> {
         for (T temp : items){
             if(temp.getTitle().equals(productName))
             {
-                temp.setPrice(temp.getPrice()*((100-discount)/100));
+                temp.setPrice(temp.getPrice()*((100-discount)*1.0/100));
                 return;
             }
         }
